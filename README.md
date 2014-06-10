@@ -46,5 +46,5 @@ For more tech specs, and a discussion about Future Development, see Doc folder f
 <br>Enjoy!</br>
 
 author: Jian Chen
-June 6, 2014
+<br>June 6, 2014</br>
 dannycj11 at gmail dot com
