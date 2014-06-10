@@ -7,8 +7,10 @@ tradebot.jar
 README.txt
 
 Doc:
-doc.html
-img folder
+<ul>
+<l>doc.html</l>
+<l>img folder</l>
+</ul>
 
 src:
 package to source files:
