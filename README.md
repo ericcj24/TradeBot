@@ -1,24 +1,26 @@
 TradeBot
 
 This is a simplified single stock trade simulator.
-Content:
+<br>Content:</br>
 base folder:
 tradebot.jar
 README.txt
 
 Doc:
 <ul>
-<l>doc.html</l>
-<l>img folder</l>
+<li>doc.html</li>
+<li>img folder</li>
 </ul>
 
 src:
 package to source files:
-Order.java
-OrderBook.java
-Trade.java
-TradeBot.java
-TradeBotHelper.java
+<ul>
+<li>Order.java</li>
+<li>OrderBook.java</li>
+<li>Trade.java</li>
+<li>TradeBot.java</li>
+<li>TradeBotHelper.java</li>
+</ul>
 
 bin:
 generated class files
