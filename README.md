@@ -2,9 +2,12 @@ TradeBot
 
 This is a simplified single stock trade simulator.
 <br>Content:</br>
+
 base folder:
-tradebot.jar
-README.txt
+<ul>
+<li>tradebot.jar</li>
+<li>README.txt</li>
+</ul>
 
 Doc:
 <ul>
@@ -23,21 +26,24 @@ package to source files:
 </ul>
 
 bin:
-generated class files
-manifest.txt
-
+<ul>
+<li>generated class files</li>
+<li>manifest.txt</li>
+</ul>
 
 How to use it:
-there are 3 ways to use this program:
-1. import into Eclipse, run as a Eclipse project
-2. in a terminal environment, go to top folder, contains tradebot.jar file
-   issue command: java -jar tradebot.jar
-3. in a terminal environment, go to the /bin/ folder
-   issue command: java com.jianchen.tradebot.TradeBot
+<br>there are 3 ways to use this program:</br>
+<ul>
+<li>1. import into Eclipse, run as a Eclipse project</li>
+<li>2. in a terminal environment, go to top folder, contains tradebot.jar file
+   <br>issue command: java -jar tradebot.jar</br></li>
+<li>3. in a terminal environment, go to the /bin/ folder
+   <br>issue command: java com.jianchen.tradebot.TradeBot</br></li>
+</ul>
 
 For more tech specs, and a discussion about Future Development, see Doc folder for more info.
 
-Enjoy!
+<br>Enjoy!</br>
 
 author: Jian Chen
 June 6, 2014
