@@ -1,0 +1,81 @@
+<h1>TradeBot</h1>
+
+<p>This is a simplified single stock trade simulation program</p>
+<p>author: Jian Chen
+<br>June 6, 2014</br>
+dannycj11 at gmail dot com</p>
+
+
+<ul>
+	<li><a href="#1">1. classes</a></li>
+	<li><a href="#2">2. important modules</a></li>
+	<li><a href="#2.1">2.1 user input check</a></li>
+	<li><a href="#2.2">2.2 trade detection</a></li>
+	<li><a href="#2.3">2.3 print format</a></li>
+	<li><a href="#3">3. Future Development Suggestions</a></li>
+</ul>
+
+
+<a name="1"></a>
+<h3>1. Class Explained</h3>
+<h4>Order class:</h4>
+<p>each order placed by user: quantity and price
+<br></br>
+for future development:
+<br>side: Buy or Sell</br>
+id: each order has a unique id</p>
+
+<h4>OrderBook class:</h4>
+two seperate LinkedList store Buy orders and Sell orders in order book
+<br>wrapper functions to help access and change content in those two LinkedList</br>
+
+<h4>Trade class:</h4>
+each trade successfully made: quantity and price
+<br></br>
+for future development:
+<br>buy_id: the buy order in this trade</br>
+sell_id: the sell order in this trade
+</p>
+
+<h4>TradeBot class:</h4>
+the main class, program entry-point, including driver function, userInputValidityCheck function
+
+<h4>TradeBotHelper class:</h4>
+helper class for TradeBot class
+<br>functions including: </br>
+public String getUserInput(){} to get user input
+<br>public void addBuy(int buyquantity, float buyprice){} to analysis new buy order against existing order book</br>
+public void addSell(int sellquantity, float sellprice){} to analysis new sell order against existing order book
+<br>public void updateScreen(){} to display new trades and current order book</br>
+
+
+<a name="2"></a>
+<h3>2. Important Modules</h3>
+<a name="2.1"></a>
+<h4>2.1 User Input Validity Check</h4>
+<p>  this checks if a user input is valid, the checking goes linearly:
+<br>  check [enter] -> check 'quit' -> check if it could be seperated to 3 segment -> check for valid side -> check for valid quantity -> check for valid price</br></p>
+
+<a name="2.2"></a>
+<h4>2.2 Trade Detection</h4>
+public void addBuy(int buyquantity, float buyprice){} and public void addSell(int sellquantity, float sellprice){} are used to deal with trade detection for seperate buy and sell order
+<p>logic flow when there is a new buy order: </p>
+<img src="img/new_buy_order.JPG"  WIDTH=800 HEIGHT=600>
+<p>logic flow when there is a new sell order would be similar to the buy order's</p>
+
+<a name="2.3"></a>
+<h4>2.3 Print Format</h4>
+In order to print order book's buy orders in price descending fashion, and order book's sell order in price ascending fashion, two temperory ArrayList are used to help find same priced orders and combine them, and finally print them out.
+<br>In order to protect the printing format, the quantity is limited to 9 digit (999,999,999)</br>
+
+<a name="3"></a>
+<h3>3. Future Development Suggestion</h3>
+
+<p>use two OrderBooks, one for order_book realtime, the other order_book recordkeeping.
+<br>realtime order_book updates everytime after excution of an order</br>
+recordkeeping order_book keeps all buy and sell orders in time order, each with a unique id</p>
+
+<p><br>use two trade lists, realtime and record keeping</br>
+recordkeeping trade list store all trades from beginning, in the list, each Trade would have a buy_id and sell_id points to more order information in recordkeeping order_book
+<br>the realtime trade list would be used to help printing out trades happened in each order excution</br></p>
+
